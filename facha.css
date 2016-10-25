@@ -1,14 +1,35 @@
+body {
+	margin: 0px;
+	padding: 0px;
+}
+
 header {
 	height:99; 
 	width:1920;
+	display: inline;
 }
 
 .logo {
-	
+	display: inline;
+}
+
+.logo img {
+	height: 67px;
+	width: 194px;
+	display: inline;
 }
 
 .nav {
-	
+	display: inline-block;
+}
+
+.nav .menu li {
+	list-style-type: none;
+	display: inline-block;
+}
+
+.nav .menu li p {
+	display: inline;
 }
 
 .slider {
@@ -21,14 +42,31 @@ header {
 	width:1920;
 }
 
-.servicios {
-	height:720; 
-	width:1920;
-}
-
 .cuadricula {
 	height:917; 
 	width:1920;
+}
+
+.cuadricula .paneles li {
+	list-style-type: none;
+	display: inline;
+}
+
+.cuadricula .paneles li img {
+	display: inline;
+}
+
+.servicios {
+	min-height: 500px;
+    max-height: 790px;
+    padding-top: 260px;
+    background-size: cover;
+    margin-top: 40px;
+	background-image: url("img/servicios.png");
+}
+
+.prestaciones .horrores {
+	list-style-type: none;
 }
 
 .data {
@@ -36,7 +74,51 @@ header {
 	width:1920;
 }
 
+.perk {
+	display: inline-block;
+	margin: auto;
+}
+
+.perk p {
+	text-align: center;
+}
+
+.sociales {
+	display: block;
+}
+
+.sociales li {
+	list-style-type: none;
+	display: inline-block;
+}
+
+.sociales li img {
+	margin: auto;
+}
+
+.banca .president img {
+	height: 100px;
+	width: 100px;
+	display: block;
+	margin: auto;
+}
+
+.banca .international img {
+	height: 39px;
+	width: 200px;
+	display: block;
+	margin: auto;
+}
+
+.banca .nintendo img {
+	height:85px; 
+	width:150px;
+	display: block;
+	margin: auto;
+}
+
 footer {
 	height:471; 
 	width:1920;
+	background-color: #79bd53;
 }
