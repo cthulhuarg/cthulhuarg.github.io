@@ -4,8 +4,8 @@ body {
 }
 
 header {
-	height:99; 
-	width:1920;
+	height:99px; 
+	width:1920px;
 	display: inline;
 }
 
@@ -32,19 +32,31 @@ header {
 	display: inline;
 }
 
-.slider {
-	height:720; 
-	width:1920;
+.fadein { 
+    margin: 50px auto; 
+    position: relative; 
+    width: 1920px; 
+    height: 720px; 
+    padding: 10px; 
+    box-shadow: 0 0 20px rgba(0,0,0,0.4); 
+}
+
+.fadein img { 
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+    right: 10px; 
+    bottom: 10px; 
 }
 
 .intro {
-	height:406; 
-	width:1920;
+	height:406px; 
+	width:1920px;
 }
 
 .cuadricula {
-	height:917; 
-	width:1920;
+	height:917px; 
+	width:1920px;
 }
 
 .cuadricula .paneles li {
@@ -70,8 +82,8 @@ header {
 }
 
 .data {
-	height:666; 
-	width:1920;
+	height:666px; 
+	width:1920px;
 }
 
 .perk {
@@ -118,7 +130,7 @@ header {
 }
 
 footer {
-	height:471; 
-	width:1920;
+	height:471px; 
+	width:1920px;
 	background-color: #79bd53;
 }
