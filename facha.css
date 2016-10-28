@@ -7,6 +7,8 @@ header {
 	height:99px; 
 	width:1920px;
 	display: inline;
+	position: fixed;
+	background-color: #ffffff;
 }
 
 .logo {
@@ -80,12 +82,14 @@ header {
 
 .cuadricula {
 	height:917px; 
-	width:100%;
+	width:1629px;
 	position: relative;
+	margin: 0 auto;
 }
 
-.cuadricula .paneles {
+.paneles {
 	margin: 0 auto;
+	padding: 0;
 }
 
 .cuadricula .paneles li {
@@ -140,7 +144,7 @@ header {
 
 .data {
 	max-height:425px; 
-	/*width:100%;*/
+	width:535px;
 	margin: 0 auto;
 	padding-top: 60px;
 }
@@ -151,19 +155,27 @@ header {
 
 .perk p {
 	text-align: center;
+	font-family: 'Roboto Slab', serif;
 }
 
 .sociales {
-	display: block;
+	margin: 0 auto;
+}
+
+.sociales ul {
+	width: 110px;
+	margin: 0 auto;
+	padding: 0;
 }
 
 .sociales li {
 	list-style-type: none;
 	display: inline-block;
+
 }
 
 .sociales li img {
-	margin: auto;
+	margin: 0 auto;
 }
 
 .banca .president img {
@@ -189,6 +201,6 @@ header {
 
 footer {
 	height:471px; 
-	width:1920px;
+	width:100%;
 	background-color: #eaeaea;
 }
