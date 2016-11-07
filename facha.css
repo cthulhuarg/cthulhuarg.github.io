@@ -40,8 +40,15 @@ header {
 	padding: 10px;
 }
 
-.nav .menu li p {
+.nav .menu li a {
 	display: inline;
+	text-decoration: none;
+	color: black;
+}
+
+.nav .menu li:hover a {
+	padding-bottom: 4px;
+	border-bottom: 4px solid #338855;
 }
 
 #slideshow {
