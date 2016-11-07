@@ -4,11 +4,18 @@ body {
 }
 
 header {
-	height:99px; 
-	width:1920px;
+	height:85px; 
+	width:100%;
 	display: inline;
 	position: fixed;
+	z-index: 10;
+	top: 0;
 	background-color: #ffffff;
+}
+
+.head {
+	max-width: 1200px;
+	margin: 0 auto;
 }
 
 .logo {
@@ -42,8 +49,8 @@ header {
   position: relative;
   width: 1920px;
   height: 720px;
-  /*padding: 10px;*/
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  padding-top: 60px;
+  /*box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);*/
 }
 
 #slideshow > div {
@@ -56,8 +63,10 @@ header {
 
 .intro {
 	height:406px; 
-	width:920px;
+	width:1100px;
 	margin: auto;
+	padding-top: 60px;
+	padding-bottom: 60px;
 }
 
 .intro h1 {
@@ -81,7 +90,6 @@ header {
 }
 
 .cuadricula {
-	height:917px; 
 	width:1629px;
 	position: relative;
 	margin: 0 auto;
@@ -103,19 +111,81 @@ header {
 	position: relative;
 }
 
+.cuadricula .paneles li h4 {
+	position: absolute;
+	z-index: 200;
+	font-family: 'Roboto Slab', serif;
+	color: #fafafa;
+	font-size: 2.3em;
+	text-shadow: 2px 2px #000000;
+}
+
+#one {
+	top: 200px;
+	left: 30px;	
+}	
+
+#two {
+	top: 200px;
+	left: 440px;
+}
+
+#three {
+	top: 200px;
+	left: 850px;
+}
+
+#four {
+	top:200px;
+	left: 1260px;
+}
+
+#five {
+	top: 570px;
+}
+
+#six {
+	top: 570px;
+	left: 440px;
+}
+
+#seven {
+	top: 570px;
+	left: 850px;
+}
+
+#eight {
+	top: 570px;
+	left: 1260px;
+}
+
+.cuadricula .paneles li h4 {
+	position: absolute;
+	top: 200px;
+	left: 30px;
+	font-family: 'Roboto Slab', serif;
+	color: #fafafa;
+	font-size: 2.3em;
+}
+
 .servicios {
-	min-height: 500px;
-    max-height: 790px;
-    padding-top: 150px;
+	height: 900px;
+    width: 100%;    
     background-size: cover;
-    margin-top: 40px;
+    margin-top: -50px;
 	background-image: url("img/servicios.png");
+}
+
+.servicioscont {
+	width: 1200px;
+	margin: 0 auto;
+	padding-top: 250px;
+	position: relative;
 }
 
 .video {
 	float: left;
-	padding-left: 175px;
-	max-width: 500px;
+	max-width: 600px;
 }
 
 .video h2 {
@@ -132,25 +202,45 @@ header {
 .horrores {
 	list-style-type: none;
 	float: right;
-	padding-right: 300px;
 	padding-top: -50px;
 }
 
 .horrores li {
 	font-family: 'Raleway', sans-serif;
-	font-size: 2em;
+	font-size: 1.7em;
 	padding: 10px;
 }
 
 .data {
 	max-height:425px; 
-	width:535px;
+	width:100%;
+	display: inline;
+	position: relative;
+}
+
+.datacont {
+	width: 1200px;
 	margin: 0 auto;
 	padding-top: 60px;
+	position: relative;
 }
 
 .perk {
+	height: 400px;
+	width: 300px;
+	margin-left: 48px;
+	margin-right: 48px;
 	display: inline-block;
+}
+
+.perk img {
+	position: relative;
+	padding-left: 60px;
+}
+
+.perk h3 {
+	font-family: 'Roboto Slab', serif;
+	text-align: center;
 }
 
 .perk p {
@@ -158,8 +248,15 @@ header {
 	font-family: 'Roboto Slab', serif;
 }
 
+footer {
+	height:471px; 
+	width:100%;
+	background-color: #eaeaea;
+}
+
 .sociales {
 	margin: 0 auto;
+	padding-top: 15px;
 }
 
 .sociales ul {
@@ -171,7 +268,6 @@ header {
 .sociales li {
 	list-style-type: none;
 	display: inline-block;
-
 }
 
 .sociales li img {
@@ -183,6 +279,7 @@ header {
 	width: 100px;
 	display: block;
 	margin: auto;
+	padding-top: 20px;
 }
 
 .banca .international img {
@@ -190,6 +287,7 @@ header {
 	width: 200px;
 	display: block;
 	margin: auto;
+	padding-top: 20px;
 }
 
 .banca .nintendo img {
@@ -197,10 +295,15 @@ header {
 	width:150px;
 	display: block;
 	margin: auto;
+	padding-top: 20px;
 }
 
-footer {
-	height:471px; 
-	width:100%;
-	background-color: #eaeaea;
+.legales {
+	width: 1100px;
+	margin: 0 auto;
+}
+
+.legales p {
+	font-family: 'Raleway', sans-serif;
+	text-align: center;
 }
