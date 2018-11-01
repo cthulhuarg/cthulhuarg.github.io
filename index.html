@@ -3,16 +3,17 @@
 <head>
 	<meta charset="utf-8">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,600i,700" rel="stylesheet">
 	<style type="text/css">
-		body {
-			background-color: #fbf9f1;
+		
+		*{
+		  margin: 0;
+		  padding: 0;
+		  box-sizing: border-box;
 		}
 		
 		main {
 			background-color: #fbf9f1;
-			height: 100%;
-			width: 100%;
 		}
 
 		p {
@@ -20,72 +21,81 @@
 			font-weight: 700; 
 		}
 
+		#limits {
+			width: 60%;
+			height: auto;
+			margin: auto;
+			padding-top: 15%;
+			transition: all 1.5s ease;
+		    /*transition-delay: 0.7s;*/
+		}
+
+		#limits p {
+			font-weight: 600;
+			font-style: italic;
+			text-align: center;
+			color: #696253;
+		}
+
 		#logoCon {
 			width: 20%;
-			height: 100%;
-			margin-left: 35%;
-			padding-top: 15%;
+			height: auto;
+			margin: 0 auto;
+			padding-top: 10%;
 		}
-
 		#hojitas {
 			transition: all 1.5s ease;
-			transition-delay: 1.2s;
+			transition-delay: 2.2s;
 		}
-
 		#hojitas img {
 			height: auto;
 		    width: 135px;
 		    position: absolute;
 		    transition: all 1s ease;
 		}
-
 		.winter {
 			opacity: 0;
 		}
-
 		.spring {
 			opacity: 1;
 		}
-
+		#arbolito {
+			transition-delay: 1s;
+		}
 		#arbolito img {
 			height: auto;
-		    width: 100px;
+		    width: 111px;
 		    position: absolute;
-		    padding-top: 41px;
-		    padding-left: 13px;
+		    padding-top: 43px;
+		    padding-left: 14px;
 		    transition: all 1s ease;
+		    transition-delay: 1s;
 		}
-
 		#cortina {
 			width: 135px;
 		    position: absolute;
 		    background-color: #fbf9f1;
 		    transition: all 2s ease;
 		}
-
 		.closed {
 			height: 188px;		    
 		}
-
 		.opened {
 			height: 0px;
 		}
-
 		#loguito {
 		    transition: all 1.5s ease;
-		    transition-delay: 2.2s;
+		    transition-delay: 3.2s;
 		}
-
 		#loguito img {
 			height: auto;
-		    width: 250px;
+		    width: 300px;
 		    position: absolute;
 		    padding-top: 124px;
 		    padding-left: 92px;
 		    transition: all 2s ease;
 		    transition-delay: 0.5s;
 		}
-
 		#enConst {
 			padding-top: 200px;
     		width: 300px;
@@ -93,13 +103,53 @@
 		    transition: all 1.5s ease;
 		    transition-delay: 2.5s;
 		}
-
+		
+		.corner-ribbon{
+		  width: 345px;
+		  background: #e43;
+		  position: absolute;
+		  top: 25px;
+		  left: -50px;
+		  font-family: 'Montserrat', sans-serif;
+		  font-weight: 700;
+		  font-size: 0.7em;
+		  text-align: center;
+		  line-height: 50px;
+		  letter-spacing: 1px;
+		  color: #f0f0f0;
+		  transform: rotate(-45deg);
+		  -webkit-transform: rotate(-45deg);
+		}
+		/* Custom styles */
+		.corner-ribbon.sticky{
+		  position: fixed;
+		}
+		.corner-ribbon.shadow{
+		  box-shadow: 0 0 3px rgba(0,0,0,.3);
+		}
+		/* Different positions */
+		.corner-ribbon.top-right{
+		  top: 60px;
+    		  right: -88px;
+    		  left: auto;
+    		  transform: rotate(45deg);
+    		  -webkit-transform: rotate(45deg);
+		}
+		
+	/* Colors */
+	.corner-ribbon.green{background: #95b36b;}
 	</style>
 	<title>Anahí Navarro Psicología</title>
 </head>
 <body>
 	<main>
+		<div id="ribbon" class="corner-ribbon top-right sticky green shadow">SITIO EN CONSTRUCCIÓN</div>
+		<div id="limits" class="winter">
+			<p>"Al otro lado de los límites autoimpuestos, una parte de mí que todavía no conozco <br> aguarda a que la descubra para poder completarme"</p>
+		</div>
 		<div id="logoCon">
+			
+		
 			<div id="hojitas" class="winter">
 				<img src="img/hojitas.png">
 			</div>
@@ -112,23 +162,19 @@
 			<div id="loguito" class="winter">
 				<img src="img/loguito.png">
 			</div>
-			<div id="enConst" class="winter">
-				<p>Sitio en construcción</p>
-			</div>
 		</div>
 	</main>
 	<script>
 		$(document).ready(function(){
 			setTimeout(function(){
+				$('#limits').removeClass('winter');
+				$('#limits').addClass('spring');
 				$('#cortina').removeClass('closed');
 				$('#cortina').addClass('opened');
-
 				$('#hojitas').removeClass('winter');
 				$('#hojitas').addClass('spring');
-
 				$('#loguito').removeClass('winter');
 				$('#loguito').addClass('spring');
-
 				$('#enConst').removeClass('winter');
 				$('#enConst').addClass('spring');
 			},1000)
@@ -136,7 +182,6 @@
 	</script>
 </body>
 </html>
-
 <!--<!DOCTYPE html>
 <html>
 <head>
